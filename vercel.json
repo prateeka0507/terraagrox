@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/home", "destination": "/index.html" },
+    { "source": "/about", "destination": "/about-us.html" },
+    { "source": "/founder", "destination": "/founder.html" },
+    { "source": "/products", "destination": "/products.html" },
+    { "source": "/herbal-powders", "destination": "/herbal-powders.html" },
+    { "source": "/spices", "destination": "/spices.html" },
+    { "source": "/jaggery", "destination": "/jaggery.html" },
+    { "source": "/contact", "destination": "/contact-us.html" }
+  ]
+}
+
