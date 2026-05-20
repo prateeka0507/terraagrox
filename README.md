@@ -1,6 +1,6 @@
-# TerraGrox Global — Static Export Website
+# TerrAgrox global — Static Export Website
 
-Static multi-page website for **TerraGrox Global** (Salem, Tamil Nadu), built with the same layout/structure style as `avinternationalexim.com`, but with TerraGrox branding, products, and WhatsApp-first enquiries.
+Static multi-page website for **TerrAgrox global** (Salem, Tamil Nadu), built with the same layout/structure style as `avinternationalexim.com`, but with TerrAgrox branding, products, and WhatsApp-first enquiries.
 
 ## Tech stack
 

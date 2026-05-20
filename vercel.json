@@ -8,7 +8,8 @@
     { "source": "/herbal-powders", "destination": "/herbal-powders.html" },
     { "source": "/spices", "destination": "/spices.html" },
     { "source": "/jaggery", "destination": "/jaggery.html" },
-    { "source": "/contact", "destination": "/contact-us.html" }
+    { "source": "/contact", "destination": "/contact-us.html" },
+    { "source": "/faq", "destination": "/faq.html" }
   ]
 }
 

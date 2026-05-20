@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TerraGrox Global | About Us</title>
-    <meta name="description" content="About TerraGrox Global — Salem-based agricultural export company." />
+    <title>TerrAgrox global | About Us</title>
+    <meta name="description" content="About TerrAgrox global — Salem-based agricultural export company." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
@@ -20,38 +20,55 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body>
+  <body data-i18n-page-title="page_title_about">
     <nav class="navbar navbar-expand-lg tg-navbar">
       <div class="container">
-        <a class="navbar-brand brand-logo" href="index.html" aria-label="TerraGrox Global home">
-          <img src="assets/images/logo.png" alt="TerraGrox Global" />
+        <a class="navbar-brand brand-logo" href="index.html" aria-label="TerrAgrox global home">
+          <img src="assets/images/logo-nav.png" alt="TerrAgrox global" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">Home</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_about">About</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item active" href="about-us.html">Company</a></li>
-                <li><a class="dropdown-item" href="founder.html">Founder Profile</a></li>
+                <li><a class="dropdown-item active" href="about-us.html" data-i18n="nav_company">Company</a></li>
+                <li><a class="dropdown-item" href="founder.html" data-i18n="nav_founder">Founder Profile</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav_products">Products</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="products.html">All Products</a></li>
-                <li><a class="dropdown-item" href="herbal-powders.html">Herbal Powders</a></li>
-                <li><a class="dropdown-item" href="spices.html">Spices</a></li>
-                <li><a class="dropdown-item" href="jaggery.html">Jaggery</a></li>
+                <li><a class="dropdown-item" href="products.html" data-i18n="nav_all_products">All Products</a></li>
+                <li><a class="dropdown-item" href="herbal-powders.html" data-i18n="nav_herbal">Herbal Powders</a></li>
+                <li><a class="dropdown-item" href="spices.html" data-i18n="nav_spices">Spices</a></li>
+                <li><a class="dropdown-item" href="jaggery.html" data-i18n="nav_jaggery">Jaggery</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav_faq">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+            <li class="nav-item dropdown lang-dropdown">
+              <button class="nav-link dropdown-toggle d-flex align-items-center gap-2 py-lg-2" type="button" id="langBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/img/flags/en.svg" id="activeLangFlag" alt="" width="22" height="16" />
+                <span id="activeLangCode">EN</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end lang-menu" aria-labelledby="langBtn">
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="en" data-flag="en.svg" data-i18n="lang_en">English</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="ar" data-flag="ar.svg" data-i18n="lang_ar">Arabic</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="zh" data-flag="zh.svg" data-i18n="lang_zh">Chinese</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="fr" data-flag="fr.svg" data-i18n="lang_fr">French</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="de" data-flag="de.svg" data-i18n="lang_de">German</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="es" data-flag="es.svg" data-i18n="lang_es">Spanish</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="ms" data-flag="ms.svg" data-i18n="lang_ms">Malay</a></li>
+              </ul>
+            </li>
+
             <li class="nav-item ms-lg-3">
-              <a class="btn btn-whatsapp" href="https://wa.me/917695929907" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Us
+              <a class="btn btn-whatsapp" href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp me-2"></i><span data-i18n="nav_whatsapp">WhatsApp Us</span>
               </a>
             </li>
           </ul>
@@ -59,28 +76,16 @@
       </div>
     </nav>
 
-    <header class="page-hero page-hero-slider">
-      <div id="pageHero" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bg="assets/images/image%201.jpg"></div>
-          <div class="carousel-item" data-bg="assets/images/image%202.jpeg"></div>
-          <div class="carousel-item" data-bg="assets/images/image%203.webp"></div>
-          <div class="carousel-item" data-bg="assets/images/image%204.avif"></div>
-          <div class="carousel-item" data-bg="assets/images/image%205.jpg"></div>
-          <div class="carousel-item" data-bg="assets/images/image%206.avif"></div>
-          <div class="carousel-item" data-bg="assets/images/image%207.webp"></div>
-        </div>
-
-        <div class="hero-caption">
-          <div class="inner" data-aos="fade-up">
-            <h1>About Us</h1>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About Us</li>
-              </ol>
-            </nav>
-          </div>
+    <header class="page-hero-static" style="background-image:url('https://images.unsplash.com/photo-1543168256-418811576931?w=1400&amp;q=80')">
+      <div class="container">
+        <div class="inner" data-aos="fade-up">
+          <h1 data-i18n="about_hero_h1">About Us</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html" data-i18n="breadcrumb_home">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page" data-i18n="about_hero_crumb">About Us</li>
+            </ol>
+          </nav>
         </div>
       </div>
     </header>
@@ -89,23 +94,23 @@
       <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-lg-5" data-aos="fade-right">
-            <div class="about-media">
-              <img src="assets/images/image%205.jpg" alt="TerraGrox Global company" />
+            <div class="about-highlight-img" data-aos="fade-right">
+              <img src="assets/images/image%205.jpg" alt="TerrAgrox global company" />
             </div>
           </div>
-          <div class="col-lg-7" data-aos="fade-left">
-            <div class="section-label">Welcome to</div>
-            <h2 class="section-title mt-2" style="font-size:clamp(2.2rem, 4vw, 3.2rem);">TerraGrox Global</h2>
+          <div class="col-lg-7 about-story-text" data-aos="fade-left">
+            <div class="section-label" data-i18n="about_welcome_label">Welcome to</div>
+            <h2 class="section-title section-title-lg mt-2" data-i18n="about_welcome_h2">TerrAgrox global</h2>
 
-            <p class="muted mt-3">
-              At <strong>TerraGrox Global</strong>, we build seamless export connections, delivering premium Indian agricultural products with integrity, precision, and trust.
+            <p class="muted mt-3" data-i18n-html="about_p1">
+              At <strong>TerrAgrox global</strong>, we build seamless export connections, delivering premium Indian agricultural products with integrity, precision, and trust.
               Headquartered in <strong>Salem, Tamil Nadu (India)</strong>, our foundation is built on the values of <strong>reliability</strong>, <strong>transparency</strong>, and <strong>long-term partnerships</strong>.
             </p>
-            <p class="muted">
+            <p class="muted" data-i18n-html="about_p2">
               We specialize in <strong>export solutions</strong> across key sectors including herbal &amp; superfood powders, premium spices, and natural sweeteners.
               Our mission is to <strong>showcase India’s rich heritage to the world</strong> with consistent quality and export-ready packaging.
             </p>
-            <p class="muted mb-0">
+            <p class="muted mb-0" data-i18n-html="about_p3">
               With a strong commitment to ethical trade, uncompromising quality, and timely delivery, we ensure complete satisfaction—whether you’re a small retailer or a large-scale distributor.
               When you choose us, you gain not just a supplier, but a dedicated partner for your global trade journey.
             </p>
@@ -117,31 +122,65 @@
     <section class="section">
       <div class="container">
         <div class="row g-4">
-          <div class="col-lg-4" data-aos="fade-up">
-            <div class="card-soft ribbon-card h-100">
-              <div class="ribbon-icon"><i class="fa-solid fa-bullseye"></i></div>
-              <div class="ribbon-title">Our Mission</div>
-              <p class="muted mb-0">
-                Deliver premium Indian products to the global market, ensuring authenticity and quality, while fostering trust and excellence in every exchange.
-              </p>
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="mission-card h-100">
+              <span class="mv-card-icon" aria-hidden="true"><i class="fa-solid fa-bullseye"></i></span>
+              <h3 class="h4 text-white mb-3" data-i18n="about_mission_h">Our Mission</h3>
+              <p class="mv-card-lead" data-i18n="about_mission_p">To deliver premium Indian agricultural products to global markets with uncompromising authenticity, export-grade quality, and dependable service—building trust in every shipment we send.</p>
+              <ul class="mv-card-list">
+                <li data-i18n="about_mission_li1">Source directly from verified farms and processors across Tamil Nadu and India</li>
+                <li data-i18n="about_mission_li2">Supply herbal powders, spices, and natural sweeteners that meet international buyer standards</li>
+                <li data-i18n="about_mission_li3">Provide transparent pricing, timely communication, and complete export documentation</li>
+                <li data-i18n="about_mission_li4">Support importers, distributors, and brands with samples, custom packing, and long-term supply</li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="120">
-            <div class="card-soft ribbon-card h-100">
-              <div class="ribbon-icon"><i class="fa-regular fa-lightbulb"></i></div>
-              <div class="ribbon-title">Our Vision</div>
-              <p class="muted mb-0">
-                Our vision is to become a trusted global export partner, recognized for unwavering integrity, commitment to sustainable practices, and dedication to long-term relationships worldwide.
-              </p>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="120">
+            <div class="vision-card h-100">
+              <span class="mv-card-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></span>
+              <h3 class="h4 text-white mb-3" data-i18n="about_vision_h">Our Vision</h3>
+              <p class="mv-card-lead" data-i18n="about_vision_p">To become a globally trusted export partner from India—recognized for integrity, sustainable sourcing, and relationships that grow stronger with every order.</p>
+              <ul class="mv-card-list">
+                <li data-i18n="about_vision_li1">Expand TerrAgrox global's reach across Asia, Europe, the Middle East, and new markets worldwide</li>
+                <li data-i18n="about_vision_li2">Set benchmarks for quality, food safety, and ethical trade in Indian agri-exports</li>
+                <li data-i18n="about_vision_li3">Empower farmers and local communities through fair, consistent export demand</li>
+                <li data-i18n="about_vision_li4">Be the first choice for buyers who value reliability, honesty, and partnership over short-term deals</li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="240">
-            <div class="card-soft ribbon-card h-100">
-              <div class="ribbon-icon"><i class="fa-solid fa-rocket"></i></div>
-              <div class="ribbon-title">Our Growth</div>
-              <p class="muted mb-0">
-                What started as a focused export venture continues to grow with trusted partners across Asia, Europe, the Middle East, and beyond—delivering products that meet international standards and buyer requirements.
-              </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="core-values-section">
+      <div class="container">
+        <div class="text-center mb-4" data-aos="fade-up">
+          <div class="section-label" data-i18n="about_values_label">Who We Are</div>
+          <h2 class="section-title section-title-lg mt-2" data-i18n="about_values_h2">Core Values</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="value-pill-card h-100">
+              <h5 class="mb-2" data-i18n="about_val1_h">Integrity</h5>
+              <p class="muted small mb-0" data-i18n="about_val1_p">Transparent dealings and honest communication with every buyer.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+            <div class="value-pill-card h-100">
+              <h5 class="mb-2" data-i18n="about_val2_h">Quality</h5>
+              <p class="muted small mb-0" data-i18n="about_val2_p">Rigorous checks from sourcing to packing for export-grade consistency.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+            <div class="value-pill-card h-100">
+              <h5 class="mb-2" data-i18n="about_val3_h">Partnership</h5>
+              <p class="muted small mb-0" data-i18n="about_val3_p">Long-term relationships built on reliability and responsive support.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+            <div class="value-pill-card h-100">
+              <h5 class="mb-2" data-i18n="about_val4_h">Growth</h5>
+              <p class="muted small mb-0" data-i18n="about_val4_p">Serving buyers across Asia, Europe, the Middle East, and beyond.</p>
             </div>
           </div>
         </div>
@@ -153,10 +192,10 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-lg-4">
-              <img class="footer-logo" src="assets/images/logo.png" alt="TerraGrox Global" />
-              <div class="mt-2 fw-semibold">Pure from India. Trusted Worldwide.</div>
-              <p class="mt-2 mb-3 footer-desc">
-                TerraGrox Global exports premium herbal powders, spices, and natural sweeteners from Salem, Tamil Nadu — with export-ready packing and dependable documentation.
+              <img class="footer-logo" src="assets/images/logo.png" alt="TerrAgrox global" />
+              <div class="mt-2 fw-semibold" data-i18n="footer_tagline">Pure from India. Trusted Worldwide.</div>
+              <p class="mt-2 mb-3 footer-desc" data-i18n="footer_desc">
+                TerrAgrox global exports premium herbal powders, spices, and natural sweeteners from Salem, Tamil Nadu — with export-ready packing and dependable documentation.
               </p>
               <div class="social">
                 <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -167,31 +206,32 @@
               </div>
             </div>
             <div class="col-sm-6 col-lg-2">
-              <div class="fw-bold text-white mb-3">Quick Links</div>
+              <div class="fw-bold text-white mb-3" data-i18n="footer_quick_links">Quick Links</div>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a href="index.html">Home</a></li>
-                <li class="mb-2"><a href="about-us.html">About Us</a></li>
-                <li class="mb-2"><a href="founder.html">Founder Profile</a></li>
-                <li class="mb-2"><a href="products.html">All Products</a></li>
-                <li class="mb-2"><a href="contact-us.html">Contact Us</a></li>
+                <li class="mb-2"><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li class="mb-2"><a href="about-us.html" data-i18n="footer_about">About Us</a></li>
+                <li class="mb-2"><a href="founder.html" data-i18n="nav_founder">Founder Profile</a></li>
+                <li class="mb-2"><a href="products.html" data-i18n="nav_all_products">All Products</a></li>
+                <li class="mb-2"><a href="faq.html" data-i18n="nav_faq">FAQs</a></li>
+                <li class="mb-2"><a href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <div class="fw-bold text-white mb-3">Our Products</div>
+              <div class="fw-bold text-white mb-3" data-i18n="footer_our_products">Our Products</div>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a href="herbal-powders.html">Herbal Powders</a></li>
-                <li class="mb-2"><a href="spices.html">Premium Spices</a></li>
-                <li class="mb-2"><a href="jaggery.html">Jaggery</a></li>
+                <li class="mb-2"><a href="herbal-powders.html" data-i18n="nav_herbal">Herbal Powders</a></li>
+                <li class="mb-2"><a href="spices.html" data-i18n="footer_premium_spices">Premium Spices</a></li>
+                <li class="mb-2"><a href="jaggery.html" data-i18n="nav_jaggery">Jaggery</a></li>
               </ul>
             </div>
             <div class="col-lg-3">
-              <div class="fw-bold text-white mb-3">Contact Info</div>
+              <div class="fw-bold text-white mb-3" data-i18n="footer_contact_info">Contact Info</div>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 121/A Naranampalayam, Kamalapuram, Omalur TK, Salem – 636 009, India</li>
-                <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:terragroxglobal@gmail.com">terragroxglobal@gmail.com</a></li>
+                <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 121/A Naranampalayam, Kamalapuram, Omalur TK, Salem – 636309, India</li>
+                <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:info@terragroxglobal.com">info@terragroxglobal.com</a></li>
                 <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:export@terragrox.com">export@terragrox.com</a></li>
-                <li class="mb-2"><i class="fa-brands fa-whatsapp me-2"></i> <a href="https://wa.me/917695929907" target="_blank" rel="noreferrer">+91 7695929907</a></li>
-                <li class="mb-0"><i class="fa-solid fa-clock me-2"></i> Mon–Sat: 9:00 AM – 6:00 PM IST</li>
+                <li class="mb-2"><i class="fa-brands fa-whatsapp me-2"></i> <a href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer">+91 7695929907</a></li>
+                <li class="mb-0"><i class="fa-solid fa-clock me-2"></i> <span data-i18n="footer_hours">Mon–Sat: 9:00 AM – 6:00 PM IST</span></li>
               </ul>
             </div>
           </div>
@@ -199,13 +239,13 @@
       </div>
       <div class="bottom">
         <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
-          <div>© <span id="year"></span> TerraGrox Global. All rights reserved.</div>
+          <div>© <span id="year"></span> TerrAgrox global. All rights reserved.</div>
           <div>India · Salem, Tamil Nadu</div>
         </div>
       </div>
     </footer>
 
-    <a class="float-wa" href="https://wa.me/917695929907" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+    <a class="whatsapp-float" href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
       <i class="fa-brands fa-whatsapp fa-lg"></i>
     </a>
     <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
