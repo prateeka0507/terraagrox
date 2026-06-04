@@ -253,7 +253,7 @@
       copyEl.textContent = dict.footer_copyright.replace("{year}", year ? year.textContent : String(new Date().getFullYear()));
     }
 
-    const waLabel = dict.btn_enquire_wa || "Enquire on WhatsApp";
+    const waLabel = dict.btn_enquire_wa || "Enquire Now";
     $$(".btn-product-wa").forEach((btn) => {
       const icon = btn.querySelector("i");
       btn.innerHTML = icon ? `${icon.outerHTML} ${waLabel}` : waLabel;
@@ -264,7 +264,18 @@
 
     const codeEl = $("#activeLangCode");
     const flagEl = $("#activeLangFlag");
-    const map = { en: "EN", ar: "AR", zh: "ZH", fr: "FR", de: "DE", es: "ES", ms: "MS" };
+    const map = {
+      en: "EN",
+      ar: "AR",
+      zh: "ZH",
+      fr: "FR",
+      de: "DE",
+      es: "ES",
+      ms: "MS",
+      hi: "HI",
+      ja: "JA",
+      pt: "PT",
+    };
     if (codeEl) codeEl.textContent = map[lang] || "EN";
 
     const activeOpt = $(`.lang-opt[data-lang="${lang}"]`);
@@ -279,7 +290,7 @@
   }
 
   async function setLanguage(lang) {
-    const safe = ["en", "ar", "zh", "fr", "de", "es", "ms"].includes(lang) ? lang : "en";
+    const safe = ["en", "ar", "zh", "fr", "de", "es", "ms", "hi", "ja", "pt"].includes(lang) ? lang : "en";
     try {
       const base = await loadJson("assets/locales/en.json");
       let extra = {};
@@ -370,15 +381,60 @@
       const name = h5.textContent.trim().replace(/\s+/g, " ");
       const a = document.createElement("a");
       a.className = "btn-product-wa";
-      a.href = buildWaUrl(`Hi, I am interested in ${name}. Please share more details.`);
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      const waLabel = (window.TG_I18N && window.TG_I18N.btn_enquire_wa) || "Enquire on WhatsApp";
-      a.innerHTML = `<i class="fa-brands fa-whatsapp"></i> ${waLabel}`;
+      a.href = "contact-us.html#waContactForm";
+      const waLabel = (window.TG_I18N && window.TG_I18N.btn_enquire_wa) || "Enquire Now";
+      a.innerHTML = `<i class="fa-solid fa-paper-plane"></i> ${waLabel}`;
       body.appendChild(a);
     });
   }
   enhanceLegacyProductCards();
+
+  // ---------- Product spec panels ----------
+  function buildSpecPanels() {
+    $$(".product-card[data-spec]").forEach((card) => {
+      if ($(".product-spec-panel", card)) return;
+      let spec;
+      try {
+        // Decode HTML entities before parsing JSON
+        const raw = card.getAttribute("data-spec").replace(/&amp;/g,"&").replace(/&#39;/g,"'").replace(/&quot;/g,'"');
+        spec = JSON.parse(raw);
+      } catch (e) { return; }
+
+      const name = ($("h5", card) || {}).textContent || "";
+      const rows = [
+        ["Botanical", spec.botanical],
+        ["Family", spec.family],
+        ["Plant Part", spec.parts],
+        ["Form", spec.form],
+        ["Colour", spec.color],
+        spec.mesh ? ["Mesh Size", spec.mesh] : null,
+        ["Origin", "India"],
+      ].filter(Boolean).filter(([, v]) => v);
+
+      const productName = name.trim().replace(/\s+/g," ");
+      const waMsg = encodeURIComponent(`Hi, I am interested in ${productName}. Please share more details.`);
+      const waUrl = `${WA_BASE}?text=${waMsg}`;
+
+      const panel = document.createElement("div");
+      panel.className = "product-spec-panel";
+      panel.innerHTML = `
+        <div class="spec-cat-label">${spec.cat || ""}</div>
+        <div class="spec-product-name">${name}</div>
+        <div class="spec-rows">
+          ${rows.map(([l, v]) => `<div class="spec-row"><span class="spec-row-label">${l}</span><span class="spec-row-val">${v}</span></div>`).join("")}
+        </div>
+        ${spec.applications ? `<div class="spec-applications"><strong>Applications</strong>${spec.applications}</div>` : ""}
+        <a class="spec-enquire-btn" href="${waUrl}" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Enquire Now
+        </a>`;
+      card.appendChild(panel);
+      card.classList.add("has-spec");
+
+      card.addEventListener("mouseenter", () => panel.classList.add("active"));
+      card.addEventListener("mouseleave", () => panel.classList.remove("active"));
+    });
+  }
+  buildSpecPanels();
 
   // ---------- AOS ----------
   if (window.AOS) {
@@ -454,7 +510,67 @@
     if (clean && clean === path) a.classList.add("active");
   });
 
+  // ---------- Mobile nav: close menu after link tap ----------
+  const mainNav = $("#mainNav");
+  if (mainNav && typeof bootstrap !== "undefined") {
+    const closeMobileNav = () => {
+      if (window.innerWidth >= 992) return;
+      const instance = bootstrap.Collapse.getInstance(mainNav);
+      if (instance && mainNav.classList.contains("show")) instance.hide();
+    };
+    $$("#mainNav .nav-link:not(.dropdown-toggle), #mainNav .dropdown-item").forEach((link) => {
+      link.addEventListener("click", closeMobileNav);
+    });
+  }
+
   // ---------- Footer year ----------
   const year = $("#year");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  // ---------- Testimonials: horizontal auto-scroll ----------
+  function setupTestimonialsMarquee() {
+    const track = $("#tgTestimonialsTrack");
+    if (!track) return;
+
+    const firstSet = $(".testimonials-marquee-set", track);
+    if (!firstSet) return;
+
+    let clone = $(".testimonials-marquee-set--clone", track);
+    if (!clone) {
+      clone = firstSet.cloneNode(true);
+      clone.classList.add("testimonials-marquee-set--clone");
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    } else {
+      clone.innerHTML = firstSet.innerHTML;
+    }
+
+    const syncClone = () => {
+      const c = $(".testimonials-marquee-set--clone", track);
+      if (c) c.innerHTML = firstSet.innerHTML;
+    };
+
+    const setSpeed = () => {
+      const w = firstSet.getBoundingClientRect().width;
+      const pxPerSec = 55;
+      track.style.setProperty("--marquee-duration", `${Math.max(w / pxPerSec, 30)}s`);
+    };
+
+    syncClone();
+    requestAnimationFrame(setSpeed);
+
+    if (!track.dataset.marqueeReady) {
+      track.dataset.marqueeReady = "1";
+      window.addEventListener("resize", setSpeed);
+      window.addEventListener("tg:langchange", () => {
+        requestAnimationFrame(() => {
+          syncClone();
+          setSpeed();
+        });
+      });
+    }
+  }
+
+  setupTestimonialsMarquee();
+  window.setTimeout(setupTestimonialsMarquee, 400);
 })();

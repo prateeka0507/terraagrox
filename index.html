@@ -51,6 +51,7 @@
                 <li><a class="dropdown-item" href="jaggery.html" data-i18n="nav_jaggery">Jaggery</a></li>
               </ul>
             </li>
+            <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav_services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav_faq">FAQs</a></li>
             <li class="nav-item"><a class="nav-link" href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
             <li class="nav-item dropdown lang-dropdown">
@@ -66,12 +67,15 @@
                 <li><a class="dropdown-item lang-opt" href="#" data-lang="de" data-flag="de.svg" data-i18n="lang_de">German</a></li>
                 <li><a class="dropdown-item lang-opt" href="#" data-lang="es" data-flag="es.svg" data-i18n="lang_es">Spanish</a></li>
                 <li><a class="dropdown-item lang-opt" href="#" data-lang="ms" data-flag="ms.svg" data-i18n="lang_ms">Malay</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="hi" data-flag="hi.svg" data-i18n="lang_hi">Hindi</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="ja" data-flag="ja.svg" data-i18n="lang_ja">Japanese</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="pt" data-flag="pt.svg" data-i18n="lang_pt">Portuguese</a></li>
               </ul>
             </li>
 
             <li class="nav-item ms-lg-3">
-              <a class="btn btn-whatsapp" href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-whatsapp me-2"></i><span data-i18n="nav_whatsapp">WhatsApp Us</span>
+              <a class="btn btn-whatsapp" href="contact-us.html#waContactForm">
+                <i class="fa-solid fa-paper-plane me-2"></i><span data-i18n="nav_whatsapp">Get a Quote</span>
               </a>
             </li>
           </ul>
@@ -86,19 +90,20 @@
           <button type="button" data-bs-target="#tgHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#tgHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#tgHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#tgHero" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
 
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bg="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1400&amp;q=80">
+          <div class="carousel-item active" data-bg="assets/herbal-hero.jpeg">
             <div class="container">
               <div class="row">
                 <div class="col-lg-10 mx-auto text-center">
                   <div class="hero-label anim d1" data-i18n="hero1_label">India's Trusted Agricultural Exporter</div>
-                  <h1 class="anim d2" data-i18n="hero1_h1">From Farm to the World — Premium Quality, Every Shipment</h1>
+                  <h1 class="anim d2" data-i18n="hero1_h1">From Farm to the World Premium Quality, Every Shipment</h1>
                   <p class="anim d3" data-i18n="hero1_p">TerrAgrox global connects international buyers with the finest Indian herbal powders, spices, and natural sweeteners. Export-ready. Certified. Reliable.</p>
                   <div class="d-flex flex-wrap gap-2 justify-content-center mt-4 anim d4">
                     <a class="btn btn-accent" href="products.html" data-i18n="hero1_btn1">Explore Our Products</a>
-                    <a class="btn btn-outline-cream" href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer" data-i18n="hero1_btn2">WhatsApp Us</a>
+                    <a class="btn btn-outline-cream" href="contact-us.html" data-i18n="hero1_btn2">Request a Quote</a>
                   </div>
                 </div>
               </div>
@@ -111,7 +116,7 @@
                 <div class="col-lg-10 mx-auto text-center">
                   <div class="hero-label anim d1" data-i18n="hero2_label">Bold · Aromatic · Export Grade</div>
                   <h1 class="anim d2" data-i18n="hero2_h1">Premium Indian Spices Trusted by Global Buyers</h1>
-                  <p class="anim d3" data-i18n="hero2_p">From Turmeric and Black Pepper to Cardamom and Tamarind — sourced from the finest Indian farms and packed to international standards.</p>
+                  <p class="anim d3" data-i18n="hero2_p">From Turmeric and Black Pepper to Cardamom and Tamarind&nbsp;—&nbsp;sourced from the finest Indian farms and packed to international standards.</p>
                   <div class="d-flex flex-wrap gap-2 justify-content-center mt-4 anim d4">
                     <a class="btn btn-accent" href="spices.html" data-i18n="hero2_btn1">View Spices</a>
                     <a class="btn btn-outline-cream" href="contact-us.html" data-i18n="hero2_btn2">Request a Quote</a>
@@ -121,16 +126,32 @@
             </div>
           </div>
 
-          <div class="carousel-item" data-bg="assets/jaggery-hero.jpeg">
+          <div class="carousel-item" data-bg="assets/jaggeryfinalterra.jpeg">
             <div class="container">
               <div class="row">
                 <div class="col-lg-10 mx-auto text-center">
                   <div class="hero-label anim d1" data-i18n="hero3_label">Traditional · Unrefined · 100% Natural</div>
-                  <h1 class="anim d2" data-i18n="hero3_h1">Authentic Indian Jaggery — Pure, Natural, Export Grade</h1>
+                  <h1 class="anim d2" data-i18n="hero3_h1">Authentic Indian Jaggery Pure, Natural, Export Grade</h1>
                   <p class="anim d3" data-i18n="hero3_p">Palmyra Jaggery, Jaggery Balls, and Palm Sugar Candy from Tamil Nadu's finest farms. Chemical-free and packed for global markets.</p>
                   <div class="d-flex flex-wrap gap-2 justify-content-center mt-4 anim d4">
                     <a class="btn btn-accent" href="jaggery.html" data-i18n="hero3_btn1">View Jaggery</a>
-                    <a class="btn btn-outline-cream" href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer" data-i18n="hero3_btn2">WhatsApp Us</a>
+                    <a class="btn btn-outline-cream" href="contact-us.html" data-i18n="hero3_btn2">Request a Quote</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bg="assets/containerterra.jpeg">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                  <div class="hero-label anim d1" data-i18n="hero4_label">Export Logistics &amp; Container Solutions</div>
+                  <h1 class="anim d2" data-i18n="hero4_h1">Secure Containerised Shipping for Global Trade</h1>
+                  <p class="anim d3" data-i18n="hero4_p">From container loading to export compliance, our logistics services ensure your products sail safely to international buyers with speed and confidence.</p>
+                  <div class="d-flex flex-wrap gap-2 justify-content-center mt-4 anim d4">
+                    <a class="btn btn-accent" href="services.html" data-i18n="hero4_btn1">Learn More</a>
+                    <a class="btn btn-outline-cream" href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer" data-i18n="hero4_btn2">WhatsApp Us</a>
                   </div>
                 </div>
               </div>
@@ -155,7 +176,7 @@
         <div class="row g-4 align-items-center">
           <div class="col-lg-5" data-aos="fade-right">
             <div class="about-media">
-              <img src="assets/images/image%205.jpg" alt="TerrAgrox global" />
+              <img src="/assets/containerterra.jpeg" alt="TerrAgrox global" />
             </div>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
@@ -163,7 +184,7 @@
             <h2 class="section-title section-title-lg mt-2" data-i18n="welcome_h2">TerrAgrox global</h2>
             <p class="muted mt-3" data-i18n-html="welcome_p1">
               At <strong>TerrAgrox global</strong>, we build seamless export connections, delivering premium Indian agricultural products with integrity, precision, and trust.
-              Headquartered in <strong>Salem, Tamil Nadu (India)</strong>, our foundation is built on the values of <strong>reliability</strong>, <strong>transparency</strong>, and <strong>long-term partnerships</strong>.
+              Headquartered at <strong>14/2, Street -3 kullagoundanoor, Govt of engeneering college, Karuppur, Salem - 636011</strong>, our foundation is built on the values of <strong>reliability</strong>, <strong>transparency</strong>, and <strong>long-term partnerships</strong>.
             </p>
             <p class="muted mb-0" data-i18n="welcome_p2">
               We specialize in herbal &amp; superfood powders, premium spices, and natural sweeteners—offering export-ready packing, inspection support, and dependable documentation for global buyers.
@@ -173,31 +194,36 @@
       </div>
     </section>
 
-    <!-- CATEGORIES -->
-    <section class="section home-cats">
+    <!-- PRODUCT CATEGORIES -->
+    <section class="section home-cats-section">
       <div class="container">
-        <div class="text-center mb-4" data-aos="fade-up">
-          <div class="section-label" data-i18n="home_cat_label">Our Product</div>
-          <h2 class="section-title mt-2" data-i18n="home_cat_h2">Categories</h2>
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-label" data-i18n="cats_label">Our Product</div>
+          <h2 class="section-title section-title-lg mt-2" data-i18n="cats_h2">Categories</h2>
         </div>
-
-        <div class="row g-4 justify-content-center">
-          <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up">
-            <a class="cat-tile" href="herbal-powders.html">
-              <div class="ico"><img src="assets/herbal%20powders.jpeg" alt="Herbal Powders" /></div>
-              <div class="label" data-i18n="nav_herbal">Herbal Powders</div>
+        <div class="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="80">
+          <div class="col-6 col-md-4 col-lg-3 text-center">
+            <a href="herbal-powders.html" class="cat-tile d-block text-decoration-none">
+              <div class="cat-tile-ico mx-auto mb-3">
+                <img src="assets/glass/glass herbal.jpeg" alt="Herbal Powders" />
+              </div>
+              <div class="cat-tile-label" data-i18n="nav_herbal">Herbal Powders</div>
             </a>
           </div>
-          <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="80">
-            <a class="cat-tile" href="spices.html">
-              <div class="ico"><img src="assets/spices.jpg" alt="Spices" /></div>
-              <div class="label" data-i18n="nav_spices">Spices</div>
+          <div class="col-6 col-md-4 col-lg-3 text-center">
+            <a href="spices.html" class="cat-tile d-block text-decoration-none">
+              <div class="cat-tile-ico mx-auto mb-3">
+                <img src="assets/glass/glass spices.png" alt="Spices" />
+              </div>
+              <div class="cat-tile-label" data-i18n="nav_spices">Spices</div>
             </a>
           </div>
-          <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="160">
-            <a class="cat-tile" href="jaggery.html">
-              <div class="ico"><img src="assets/jaggery-hero.jpeg" alt="Jaggery" /></div>
-              <div class="label" data-i18n="nav_jaggery">Jaggery</div>
+          <div class="col-6 col-md-4 col-lg-3 text-center">
+            <a href="jaggery.html" class="cat-tile d-block text-decoration-none">
+              <div class="cat-tile-ico mx-auto mb-3">
+                <img src="/assets/glass/glass jagg.png" alt="Jaggery" style="object-position:center 20%;" />
+              </div>
+              <div class="cat-tile-label" data-i18n="nav_jaggery">Jaggery</div>
             </a>
           </div>
         </div>
@@ -230,8 +256,8 @@
             <div class="stat">
               <i class="fa-solid fa-earth-asia"></i>
               <div>
-                <div class="value" data-count="15" data-suffix="+">0+</div>
-                <div class="label" data-i18n="stat_countries">Countries Served</div>
+                <div class="value">Global Delivery</div>
+                <div class="label">Right on Time</div>
               </div>
             </div>
           </div>
@@ -243,32 +269,6 @@
                 <div class="label" data-i18n="stat_quality">Quality Assured</div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FROM INDIA TO WORLD -->
-    <section class="section bg-light">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="section-label" data-i18n="reach_label">Our Reach</div>
-            <h2 class="section-title section-title-lg mt-2" data-i18n="reach_h2">From Salem, India to The Entire World</h2>
-            <p class="muted mt-3 mb-3" data-i18n="reach_p">
-              TerrAgrox global connects international buyers with premium Indian agricultural products. Based in Salem, Tamil Nadu,
-              we source directly from trusted farms and deliver to buyers across Asia, Europe, the Middle East, and beyond.
-              Transparency, quality, and reliability define every shipment.
-            </p>
-            <ul class="checklist animated-list">
-              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="reach_li1">Direct farm sourcing from Tamil Nadu</span></li>
-              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="reach_li2">Export-grade packaging and certification</span></li>
-              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="reach_li3">Timely delivery with full documentation</span></li>
-              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="reach_li4">Dedicated support from inquiry to shipment</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left">
-            <img class="img-fluid rounded-soft shadow-soft" src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800&q=80" alt="World map" />
           </div>
         </div>
       </div>
@@ -302,7 +302,7 @@
               <div class="card-body product-card-body">
                 <h5 data-i18n="prod_herbal_title">Herbal &amp; Superfood Powders</h5>
                 <p class="muted product-card-desc" data-i18n="prod_herbal_desc">Moringa, Beetroot, Ginger, Onion, Banana, Neem — 6 natural powders</p>
-                <a class="btn-product-wa" href="https://wa.me/917695929907?text=Hi%2C%20I%20am%20interested%20in%20Herbal%20%26%20Superfood%20Powders.%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                <a class="btn-product-wa" href="contact-us.html#waContactForm"><i class="fa-solid fa-paper-plane"></i> Request on bulk quote</a>
               </div>
             </div>
           </div>
@@ -316,7 +316,7 @@
               <div class="card-body product-card-body">
                 <h5 data-i18n="prod_spices_title">Premium Spices</h5>
                 <p class="muted product-card-desc" data-i18n="prod_spices_desc">Turmeric, Chili, Black Pepper, Cardamom and 6 more export-grade spices</p>
-                <a class="btn-product-wa" href="https://wa.me/917695929907?text=Hi%2C%20I%20am%20interested%20in%20Premium%20Spices.%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                <a class="btn-product-wa" href="contact-us.html#waContactForm"><i class="fa-solid fa-paper-plane"></i> Enquire Now</a>
               </div>
             </div>
           </div>
@@ -329,7 +329,7 @@
               <div class="card-body product-card-body">
                 <h5 data-i18n="prod_jaggery_title">Jaggery</h5>
                 <p class="muted product-card-desc" data-i18n="prod_jaggery_desc">Jaggery Balls, Powder, Palmyra Jaggery, Palm Sugar Candy — pure and unrefined</p>
-                <a class="btn-product-wa" href="https://wa.me/917695929907?text=Hi%2C%20I%20am%20interested%20in%20Jaggery.%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                <a class="btn-product-wa" href="contact-us.html#waContactForm"><i class="fa-solid fa-paper-plane"></i> Enquire Now</a>
               </div>
             </div>
           </div>
@@ -421,47 +421,41 @@
       </div>
     </section>
 
-    <!-- EXPORT PROCESS -->
-    <section class="export-process-section" data-aos="fade-up">
+    <!-- GLOBAL EXPORT JOURNEY -->
+    <section class="export-journey-section section" aria-labelledby="export-journey-heading">
       <div class="container">
-        <div class="text-center mb-5">
-          <div class="section-label" data-i18n="exp_label">How We Work</div>
-          <h2 class="section-title section-title-lg mt-2" data-i18n="exp_h2">Our Export Process</h2>
-          <p class="muted mb-0 mx-auto" style="max-width:720px;" data-i18n="exp_p">Simple, transparent, and reliable — from your first inquiry to delivery at your port.</p>
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 id="export-journey-heading" class="section-title section-title-lg" data-i18n="journey_h2">The Global Export Journey</h2>
+          <p class="export-journey-lead muted mb-0 mx-auto" data-i18n="journey_p">
+            From our roots in Salem to destinations across the globe, we ensure a seamless and transparent shipping process for every partner.
+          </p>
         </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-3 export-step-wrap" data-aos="fade-up">
-            <div class="export-step-card h-100">
-              <div class="export-step-num">1</div>
-              <div class="step-ico">📩</div>
-              <h5 class="fw-bold" data-i18n="exp1_h">Send Enquiry</h5>
-              <p class="muted small mb-0" data-i18n="exp1_p">WhatsApp or email us with your product, quantity, and destination country.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 export-step-wrap" data-aos="fade-up" data-aos-delay="100">
-            <div class="export-step-card h-100">
-              <div class="export-step-num">2</div>
-              <div class="step-ico">🧪</div>
-              <h5 class="fw-bold" data-i18n="exp2_h">Sample &amp; Approval</h5>
-              <p class="muted small mb-0" data-i18n="exp2_p">We send product samples for your quality evaluation and approval before bulk order.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 export-step-wrap" data-aos="fade-up" data-aos-delay="200">
-            <div class="export-step-card h-100">
-              <div class="export-step-num">3</div>
-              <div class="step-ico">📦</div>
-              <h5 class="fw-bold" data-i18n="exp3_h">Packing &amp; Documentation</h5>
-              <p class="muted small mb-0" data-i18n="exp3_p">Products are packed to your specification with all export documents prepared — COA, phytosanitary certificate, invoice, packing list.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 export-step-wrap" data-aos="fade-up" data-aos-delay="300">
-            <div class="export-step-card h-100">
-              <div class="export-step-num">4</div>
-              <div class="step-ico">🚢</div>
-              <h5 class="fw-bold" data-i18n="exp4_h">Shipment &amp; Delivery</h5>
-              <p class="muted small mb-0" data-i18n="exp4_p">Your order is dispatched via sea or air freight with full tracking until it reaches your destination port.</p>
-            </div>
-          </div>
+        <div class="export-journey-track" data-aos="fade-up">
+          <article class="export-journey-step">
+            <div class="export-journey-num" aria-hidden="true">1</div>
+            <h3 class="export-journey-title" data-i18n="journey1_h">Inquiry &amp; Requirements</h3>
+            <p class="export-journey-desc" data-i18n="journey1_p">Defining your global needs</p>
+          </article>
+          <article class="export-journey-step">
+            <div class="export-journey-num" aria-hidden="true">2</div>
+            <h3 class="export-journey-title" data-i18n="journey2_h">Quote &amp; Sample</h3>
+            <p class="export-journey-desc" data-i18n="journey2_p">Lab-tested quality verification</p>
+          </article>
+          <article class="export-journey-step">
+            <div class="export-journey-num" aria-hidden="true">3</div>
+            <h3 class="export-journey-title" data-i18n="journey3_h">Order Confirmed</h3>
+            <p class="export-journey-desc" data-i18n="journey3_p">Contracting &amp; documentation</p>
+          </article>
+          <article class="export-journey-step">
+            <div class="export-journey-num" aria-hidden="true">4</div>
+            <h3 class="export-journey-title" data-i18n="journey4_h">Quality Check</h3>
+            <p class="export-journey-desc" data-i18n="journey4_p">Rigorous batch inspections</p>
+          </article>
+          <article class="export-journey-step">
+            <div class="export-journey-num" aria-hidden="true">5</div>
+            <h3 class="export-journey-title" data-i18n="journey5_h">Shipment &amp; Docs</h3>
+            <p class="export-journey-desc" data-i18n="journey5_p">Secure worldwide delivery</p>
+          </article>
         </div>
       </div>
     </section>
@@ -486,126 +480,180 @@
       </div>
     </section>
 
+    <!-- GLOBAL EXPORT MARKETS -->
+    <section class="export-markets-section" aria-labelledby="export-markets-heading">
+      <div class="export-markets-bg" aria-hidden="true"></div>
+      <div class="container export-markets-inner">
+        <div class="export-markets-intro text-center" data-aos="fade-up">
+          <h2 id="export-markets-heading" class="export-markets-title" data-i18n="markets_h2">Global Footprint: Our Export Markets</h2>
+          <p class="export-markets-lead" data-i18n="markets_p">
+            From our roots in Tamil Nadu to the storefronts of global metropolises, we deliver premium organic products to the world's most discerning markets with dedicated logistics and quality assurance.
+          </p>
+        </div>
+        <div class="row g-3 g-md-4 export-markets-grid">
+          <div class="col-6 col-lg-3" data-aos="fade-up">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇺🇸</span>
+              <h3 class="export-market-name" data-i18n="market_us_h">United States</h3>
+              <p class="export-market-products" data-i18n="market_us_p">Turmeric, Moringa, Premium Spices</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇬🇧</span>
+              <h3 class="export-market-name" data-i18n="market_uk_h">United Kingdom</h3>
+              <p class="export-market-products" data-i18n="market_uk_p">Moringa Superfoods, Turmeric</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇦🇪</span>
+              <h3 class="export-market-name" data-i18n="market_uae_h">UAE</h3>
+              <p class="export-market-products" data-i18n="market_uae_p">Luxury Spices, Turmeric Exports</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇦🇺</span>
+              <h3 class="export-market-name" data-i18n="market_au_h">Australia</h3>
+              <p class="export-market-products" data-i18n="market_au_p">Superfood Powders, Herbs</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇩🇪</span>
+              <h3 class="export-market-name" data-i18n="market_de_h">Germany</h3>
+              <p class="export-market-products" data-i18n="market_de_p">Organic Spices &amp; Botanical Herbs</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇨🇦</span>
+              <h3 class="export-market-name" data-i18n="market_ca_h">Canada</h3>
+              <p class="export-market-products" data-i18n="market_ca_p">Bulk Spices &amp; Organic Herbs</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇫🇷</span>
+              <h3 class="export-market-name" data-i18n="market_fr_h">France</h3>
+              <p class="export-market-products" data-i18n="market_fr_p">Botanical Ingredients, Moringa</p>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+            <article class="export-market-card h-100">
+              <span class="export-market-flag" aria-hidden="true">🇳🇱</span>
+              <h3 class="export-market-name" data-i18n="market_nl_h">Netherlands</h3>
+              <p class="export-market-products" data-i18n="market_nl_p">Global Distribution Spices</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- TESTIMONIALS -->
-    <section class="testimonials-dark">
+    <section class="testimonials-section">
       <div class="container">
         <div class="text-center mb-4" data-aos="fade-up">
           <div class="section-label" data-i18n="test_label">Testimonials</div>
           <h2 class="section-title section-title-lg mt-2" data-i18n="test_h2">What Our Clients Say</h2>
         </div>
 
-        <div id="tgTestimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-aos="fade-up">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="testimonial-dark">
-                    <div class="quote-mark">“</div>
-                    <div class="d-flex gap-3 align-items-center position-relative">
-                      <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80" alt="Rajesh Kumar" />
-                      <div>
-                        <div class="author-name">Rajesh Kumar</div>
-                        <div class="author-meta">Dubai, UAE</div>
-                        <div class="stars">★★★★★</div>
-                      </div>
-                    </div>
-                    <p class="review-text" data-i18n="test1_text">
-                      TerrAgrox global exceeded our expectations with their moringa powder quality. Consistent grade, excellent packaging, and on-time delivery every single time. A reliable partner for our health food brand.
-                    </p>
+      </div>
+
+      </div>
+
+      <div class="testimonials-marquee-outer" data-aos="fade-up">
+        <div class="testimonials-marquee" aria-label="Client testimonials" aria-live="off">
+          <div class="testimonials-marquee-track" id="tgTestimonialsTrack">
+            <div class="testimonials-marquee-set">
+            <article class="testimonial-card">
+              <div class="testimonial-quote" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text" data-i18n="test1_text">
+                TerrAgrox global exceeded our expectations with their moringa powder quality. Consistent grade, excellent packaging, and on-time delivery every single time. A reliable partner for our health food brand.
+              </p>
+              <footer class="review-profile">
+                <div class="review-avatar review-avatar--1" aria-hidden="true">RK</div>
+                <div class="review-profile-info">
+                  <div class="author-name">Rajesh Kumar</div>
+                  <div class="author-role">Food &amp; Beverage Importer</div>
+                  <div class="author-meta"><i class="fa-solid fa-location-dot"></i> Dubai, UAE</div>
+                  <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="testimonial-dark">
-                    <div class="quote-mark">“</div>
-                    <div class="d-flex gap-3 align-items-center position-relative">
-                      <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80" alt="Priya Ramesh" />
-                      <div>
-                        <div class="author-name">Priya Ramesh</div>
-                        <div class="author-meta">Singapore</div>
-                        <div class="stars">★★★★★</div>
-                      </div>
-                    </div>
-                    <p class="review-text" data-i18n="test2_text">
-                      We import turmeric powder and dried chili from TerrAgrox regularly. The quality is superb and the team is extremely responsive. Their export documentation is always perfect.
-                    </p>
+              </footer>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-quote" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text" data-i18n="test2_text">
+                We import turmeric powder and dried chili from TerrAgrox regularly. The quality is superb and the team is extremely responsive. Their export documentation is always perfect.
+              </p>
+              <footer class="review-profile">
+                <div class="review-avatar review-avatar--2" aria-hidden="true">PR</div>
+                <div class="review-profile-info">
+                  <div class="author-name">Priya Ramesh</div>
+                  <div class="author-role">Spices Distributor</div>
+                  <div class="author-meta"><i class="fa-solid fa-location-dot"></i> Singapore</div>
+                  <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="testimonial-dark">
-                    <div class="quote-mark">“</div>
-                    <div class="d-flex gap-3 align-items-center position-relative">
-                      <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80" alt="Manikandan S" />
-                      <div>
-                        <div class="author-name">Manikandan S</div>
-                        <div class="author-meta">Kuala Lumpur, Malaysia</div>
-                        <div class="stars">★★★★★</div>
-                      </div>
-                    </div>
-                    <p class="review-text" data-i18n="test3_text">
-                      The Palmyra Jaggery we sourced from TerrAgrox global is authentic and our customers love it. Professional team with transparent processes. Highly recommended.
-                    </p>
+              </footer>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-quote" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text" data-i18n="test3_text">
+                The Palmyra Jaggery we sourced from TerrAgrox global is authentic and our customers love it. Professional team with transparent processes. Highly recommended.
+              </p>
+              <footer class="review-profile">
+                <div class="review-avatar review-avatar--3" aria-hidden="true">MS</div>
+                <div class="review-profile-info">
+                  <div class="author-name">Manikandan S</div>
+                  <div class="author-role">Natural Sweeteners Buyer</div>
+                  <div class="author-meta"><i class="fa-solid fa-location-dot"></i> Kuala Lumpur, Malaysia</div>
+                  <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="testimonial-dark">
-                    <div class="quote-mark">“</div>
-                    <div class="d-flex gap-3 align-items-center position-relative">
-                      <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80" alt="Christina Esther" />
-                      <div>
-                        <div class="author-name">Christina Esther</div>
-                        <div class="author-meta">London, UK</div>
-                        <div class="stars">★★★★★</div>
-                      </div>
-                    </div>
-                    <p class="review-text" data-i18n="test4_text">
-                      Excellent supplier for organic Indian spices. Their beetroot powder and ginger powder quality is outstanding. The export team is knowledgeable and very easy to work with.
-                    </p>
+              </footer>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-quote" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text" data-i18n="test4_text">
+                Excellent supplier for organic Indian spices. Their beetroot powder and ginger powder quality is outstanding. The export team is knowledgeable and very easy to work with.
+              </p>
+              <footer class="review-profile">
+                <div class="review-avatar review-avatar--4" aria-hidden="true">CE</div>
+                <div class="review-profile-info">
+                  <div class="author-name">Christina Esther</div>
+                  <div class="author-role">Organic Foods Retailer</div>
+                  <div class="author-meta"><i class="fa-solid fa-location-dot"></i> London, UK</div>
+                  <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <div class="testimonial-dark">
-                    <div class="quote-mark">“</div>
-                    <div class="d-flex gap-3 align-items-center position-relative">
-                      <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&q=80" alt="Ahmed Al Rashid" />
-                      <div>
-                        <div class="author-name">Ahmed Al Rashid</div>
-                        <div class="author-meta">Riyadh, Saudi Arabia</div>
-                        <div class="stars">★★★★★</div>
-                      </div>
-                    </div>
-                    <p class="review-text" data-i18n="test5_text">
-                      TerrAgrox global is our go-to supplier for natural sweeteners. Jaggery Balls and Palm Sugar Candy arrive perfectly packed. Great quality, fair pricing, and dependable service.
-                    </p>
+              </footer>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-quote" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text" data-i18n="test5_text">
+                TerrAgrox global is our go-to supplier for natural sweeteners. Jaggery Balls and Palm Sugar Candy arrive perfectly packed. Great quality, fair pricing, and dependable service.
+              </p>
+              <footer class="review-profile">
+                <div class="review-avatar review-avatar--5" aria-hidden="true">AR</div>
+                <div class="review-profile-info">
+                  <div class="author-name">Ahmed Al Rashid</div>
+                  <div class="author-role">Wholesale Importer</div>
+                  <div class="author-meta"><i class="fa-solid fa-location-dot"></i> Riyadh, Saudi Arabia</div>
+                  <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
                 </div>
-              </div>
+              </footer>
+            </article>
             </div>
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#tgTestimonials" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden" data-i18n="carousel_prev">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#tgTestimonials" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden" data-i18n="carousel_next">Next</span>
-          </button>
         </div>
       </div>
     </section>
@@ -642,7 +690,6 @@
                 <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
             </div>
@@ -651,6 +698,7 @@
               <ul class="list-unstyled mb-0">
                 <li class="mb-2"><a href="index.html" data-i18n="nav_home">Home</a></li>
                 <li class="mb-2"><a href="about-us.html" data-i18n="footer_about">About Us</a></li>
+                <li class="mb-2"><a href="services.html" data-i18n="nav_services">Services</a></li>
                 <li class="mb-2"><a href="founder.html" data-i18n="nav_founder">Founder Profile</a></li>
                 <li class="mb-2"><a href="products.html" data-i18n="nav_all_products">All Products</a></li>
                 <li class="mb-2"><a href="faq.html" data-i18n="nav_faq">FAQs</a></li>
@@ -668,9 +716,9 @@
             <div class="col-lg-3">
               <div class="fw-bold text-white mb-3" data-i18n="footer_contact_info">Contact Info</div>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 121/A Naranampalayam, Kamalapuram, Omalur TK, Salem – 636309, India</li>
+                <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 14/2, Street -3 Kullagoundanoor, Govt Engineering College, Karuppur, Salem – 636011, India</li>
                 <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:info@terragroxglobal.com">info@terragroxglobal.com</a></li>
-                <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:export@terragrox.com">export@terragrox.com</a></li>
+                <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:terragroxglobal@gmail.com">terragroxglobal@gmail.com</a></li>
                 <li class="mb-2"><i class="fa-brands fa-whatsapp me-2"></i> <a href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer">+91 7695929907</a></li>
                 <li class="mb-0"><i class="fa-solid fa-clock me-2"></i> <span data-i18n="footer_hours">Mon–Sat: 9:00 AM – 6:00 PM IST</span></li>
               </ul>
@@ -681,7 +729,8 @@
       <div class="bottom">
         <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
           <div>© <span id="year"></span> TerrAgrox global. All rights reserved.</div>
-          <div>India · Salem, Tamil Nadu</div>
+                    <div>Sustainably Sourced for You</div>
+          <div>India · Karuppur, Salem</div>
         </div>
       </div>
     </footer>

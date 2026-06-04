@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGE_TITLES = {
     "index.html": "page_title_home",
     "about-us.html": "page_title_about",
+    "services.html": "page_title_services",
     "contact-us.html": "page_title_contact",
     "faq.html": "page_title_faq",
     "products.html": "page_title_products",

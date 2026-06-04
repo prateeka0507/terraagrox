@@ -48,6 +48,7 @@
                 <li><a class="dropdown-item" href="jaggery.html" data-i18n="nav_jaggery">Jaggery</a></li>
               </ul>
             </li>
+            <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav_services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav_faq">FAQs</a></li>
             <li class="nav-item"><a class="nav-link" href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
             <li class="nav-item dropdown lang-dropdown">
@@ -63,12 +64,15 @@
                 <li><a class="dropdown-item lang-opt" href="#" data-lang="de" data-flag="de.svg" data-i18n="lang_de">German</a></li>
                 <li><a class="dropdown-item lang-opt" href="#" data-lang="es" data-flag="es.svg" data-i18n="lang_es">Spanish</a></li>
                 <li><a class="dropdown-item lang-opt" href="#" data-lang="ms" data-flag="ms.svg" data-i18n="lang_ms">Malay</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="hi" data-flag="hi.svg" data-i18n="lang_hi">Hindi</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="ja" data-flag="ja.svg" data-i18n="lang_ja">Japanese</a></li>
+                <li><a class="dropdown-item lang-opt" href="#" data-lang="pt" data-flag="pt.svg" data-i18n="lang_pt">Portuguese</a></li>
               </ul>
             </li>
 
             <li class="nav-item ms-lg-3">
-              <a class="btn btn-whatsapp" href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-whatsapp me-2"></i><span data-i18n="nav_whatsapp">WhatsApp Us</span>
+              <a class="btn btn-whatsapp" href="contact-us.html#waContactForm">
+                <i class="fa-solid fa-paper-plane me-2"></i><span data-i18n="nav_whatsapp">Get a Quote</span>
               </a>
             </li>
           </ul>
@@ -101,44 +105,97 @@
       </div>
     </header>
 
-    <section class="section bg-light">
+    <section class="section">
       <div class="container">
-        <div class="row g-4">
-          <!-- Sidebar -->
-          <div class="col-lg-3" data-aos="fade-right">
-            <div class="product-sidebar">
-              <div class="sidebar-title">Product Categories</div>
-              <div class="list-group">
-                <button class="list-group-item list-group-item-action active" type="button" data-filter="all">All Products</button>
-                <button class="list-group-item list-group-item-action" type="button" data-filter="herbal">Herbal Powders</button>
-                <button class="list-group-item list-group-item-action" type="button" data-filter="spices">Spices</button>
-                <button class="list-group-item list-group-item-action" type="button" data-filter="jaggery">Jaggery</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content -->
-          <div class="col-lg-9" data-aos="fade-left">
-            <div class="product-intro mb-4">
-              <div class="row g-3 align-items-center">
+        <div class="row mb-4">
+          <div class="col-12" data-aos="fade-up">
+            <div class="product-highlight-card">
+              <div class="row g-0 align-items-center">
                 <div class="col-md-5">
-                  <div class="product-intro-media">
+                  <div class="product-highlight-img">
                     <img id="productIntroImg" src="assets/images/image%205.jpg" alt="TerrAgrox global products" loading="lazy" />
                   </div>
                 </div>
                 <div class="col-md-7">
-                  <h2 id="productIntroTitle" class="product-intro-title mb-2">All Export Products</h2>
-                  <p id="productIntroText" class="muted mb-0">
-                    Explore our complete range of export-ready herbal powders, premium spices, and natural sweeteners — sourced from trusted farms and packed for global markets.
-                  </p>
+                  <div class="product-highlight-body">
+                    <h2 id="productIntroTitle">All Export Products</h2>
+                    <p id="productIntroText">Explore our complete range of export-ready herbal powders, premium spices, and natural sweeteners — sourced from trusted farms and packed for global markets.</p>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose TerrAgrox global -->
+    <section class="why-choose-section" aria-label="Why choose TerrAgrox global">
+      <div class="why-choose-inner">
+        <div class="why-choose-left">
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-seedling fa-lg"></i></div>
+            <div class="why-feature-text">
+              <h6>100% Pure</h6>
+              <p>Nature's Flavour,nothing else</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-spa fa-lg"></i></div>
+            <div class="why-feature-text">
+              <h6>Rich Flavour &amp; Aroma</h6>
+              <p>Naturally preserved taste and fragrance.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-recycle fa-lg"></i></div>
+            <div class="why-feature-text">
+              <h6>Sustainably Sourced</h6>
+              <p>Eco-friendly farming practices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-choose-center">
+          <div class="why-center-img">
+            <img src="assets/glass/glass products.webp" alt="TerrAgrox global products" loading="lazy" />
+          </div>
+        </div>
+        <div class="why-choose-right">
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-circle-check fa-lg"></i></div>
+            <div class="why-feature-text">
+              <h6>Rigorous Quality Checks</h6>
+              <p>Strict purity and quality standards.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-handshake fa-lg"></i></div>
+            <div class="why-feature-text">
+              <h6>Ethically Produced</h6>
+              <p>Supporting fair trade with farmers.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-award fa-lg"></i></div>
+            <div class="why-feature-text">
+              <h6>Your needs , our priority</h6>
+              <p>No Compromise on buyer reqirements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Content -->
+          <div class="col-lg-12" data-aos="fade-left">
 
             <div class="row g-4 products-grid">
           <!-- Herbal & Superfood Powders (6) -->
           <div class="col-md-6 col-lg-4" data-cat="herbal" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Moringa Powder">
+            <div class="product-card h-100" data-wa-product="Moringa Powder" data-spec='{"cat": "Herbal", "botanical": "Moringa oleifera", "family": "Moringaceae", "parts": "Leaf", "form": "Powder", "color": "Green Colored Powder", "mesh": "60–80 mesh", "applications": "Nutraceuticals, Herbal Teas, Capsules & Tablets, Energy Bars, RTDs"}'>
               <div class="product-media">
                 <img src="assets/herbal/moringa.png" alt="Moringa Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -154,7 +211,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="herbal" data-aos="fade-up" data-aos-delay="60">
-            <div class="product-card h-100" data-wa-product="Onion Powder">
+            <div class="product-card h-100" data-wa-product="Onion Powder" data-spec='{"cat": "Herbal", "botanical": "Allium cepa", "family": "Genus Allium", "parts": "Whole Onion", "form": "Powder", "color": "Bright White – Gentle Amber", "mesh": "60–80 mesh", "applications": "Nutraceuticals, Cosmetics, Herbal Teas, Capsules, Functional Foods"}'>
               <div class="product-media">
                 <img src="assets/herbal/onion.jpg" alt="Onion Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -170,7 +227,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="herbal" data-aos="fade-up" data-aos-delay="120">
-            <div class="product-card h-100" data-wa-product="Beetroot Powder">
+            <div class="product-card h-100" data-wa-product="Beetroot Powder" data-spec='{"cat": "Herbal", "botanical": "Beta vulgaris", "family": "Beta vulgaris", "parts": "Beetroot", "form": "Powder", "color": "Red color Powder", "mesh": "60–80 mesh", "applications": "Nutraceuticals, Cosmetics, Herbal Teas, Capsules, Functional Foods"}'>
               <div class="product-media">
                 <img src="assets/herbal/beetroot.webp" alt="Beetroot Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -186,7 +243,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="herbal" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Ginger Powder">
+            <div class="product-card h-100" data-wa-product="Ginger Powder" data-spec='{"cat": "Herbal", "botanical": "Zingiber officinale", "family": "Zingiberaceae", "parts": "Ginger Root", "form": "Powder", "color": "Yellowish Brown", "mesh": "60–80 mesh", "applications": "Nutraceuticals, Herbal Teas, Capsules & Tablets, Energy Bars, RTDs"}'>
               <div class="product-media">
                 <img src="assets/herbal/ginger.jpg" alt="Ginger Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -202,7 +259,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="herbal" data-aos="fade-up" data-aos-delay="60">
-            <div class="product-card h-100" data-wa-product="Banana Powder">
+            <div class="product-card h-100" data-wa-product="Banana Powder" data-spec='{"cat": "Herbal", "botanical": "Musa paradisiaca", "family": "Musaceae", "parts": "Fruit", "form": "Powder", "color": "Off White to Yellow", "mesh": "60–80 mesh", "applications": "Nutraceuticals, Baby Foods, Bakeries, Nutrition Brands"}'>
               <div class="product-media">
                 <img src="assets/herbal/banana.jpg" alt="Banana Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -216,7 +273,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="herbal" data-aos="fade-up" data-aos-delay="120">
-            <div class="product-card h-100" data-wa-product="Neem Powder">
+            <div class="product-card h-100" data-wa-product="Neem Powder" data-spec='{"cat": "Herbal", "botanical": "Azadirachta indica", "family": "Meliaceae", "parts": "Leaves", "form": "Powder", "color": "Green Color", "mesh": "60–80 mesh", "applications": "Nutraceuticals, Cosmetics, Herbal Supplements"}'>
               <div class="product-media">
                 <img src="assets/herbal/neem.webp" alt="Neem Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -231,7 +288,7 @@
 
           <!-- Spices (10) -->
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Turmeric Powder">
+            <div class="product-card h-100" data-wa-product="Turmeric Powder" data-spec='{"cat": "Spices", "botanical": "Curcuma longa", "family": "Zingiberaceae", "parts": "Root", "form": "Powder", "color": "Yellow color", "applications": "Nutraceuticals, Food Manufacturing, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/turmeric-powder.webp" alt="Turmeric Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -245,7 +302,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up" data-aos-delay="60">
-            <div class="product-card h-100" data-wa-product="Dried Turmeric Finger">
+            <div class="product-card h-100" data-wa-product="Dried Turmeric Finger" data-spec='{"cat": "Spices", "botanical": "Curcuma longa", "family": "Zingiberaceae", "parts": "Rhizome", "form": "Whole Dried Fingers", "color": "Natural Yellow to Deep Orange Yellow", "applications": "Nutraceuticals, Food & Beverages, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/dried-turmeric-finger.jpg" alt="Dried Turmeric Finger" />
                 <div class="product-overlay">Enquire Now</div>
@@ -259,7 +316,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up" data-aos-delay="120">
-            <div class="product-card h-100" data-wa-product="Chili Powder">
+            <div class="product-card h-100" data-wa-product="Chili Powder" data-spec='{"cat": "Spices", "botanical": "Capsicum annuum", "family": "Solanaceae", "parts": "Chilli Pod", "form": "Powder", "color": "Dark Red Color Powder", "mesh": "60–80 mesh", "applications": "Nutraceuticals, Food & Beverages, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/chili-powder.jpg" alt="Chili Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -273,7 +330,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Dry Red Chili">
+            <div class="product-card h-100" data-wa-product="Dry Red Chili" data-spec='{"cat": "Spices", "botanical": "Capsicum annuum", "family": "Solanaceae", "parts": "Dried Mature Chili Pods", "form": "Whole / Dried", "color": "Deep Red to Dark Red", "applications": "Cooking, Spice Blending, Food Processing, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/dry-red-chili.avif" alt="Dry Red Chili" />
                 <div class="product-overlay">Enquire Now</div>
@@ -287,7 +344,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up" data-aos-delay="60">
-            <div class="product-card h-100" data-wa-product="Cumin – Jeera">
+            <div class="product-card h-100" data-wa-product="Cumin – Jeera" data-spec='{"cat": "Spices", "botanical": "Cuminum cyminum", "family": "Apiaceae", "parts": "Dried Seeds", "form": "Whole Seeds / Powder", "color": "Brown to Light Brown", "applications": "Nutraceuticals, Food & Beverages, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/jeera-cumin.jpeg" alt="Cumin – Jeera" />
                 <div class="product-overlay">Enquire Now</div>
@@ -301,7 +358,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up" data-aos-delay="120">
-            <div class="product-card h-100" data-wa-product="Black Pepper">
+            <div class="product-card h-100" data-wa-product="Black Pepper" data-spec='{"cat": "Spices", "botanical": "Piper nigrum", "family": "Piperaceae", "parts": "Dried Pepper Berries", "form": "Whole / Powder", "color": "Dark Black to Brownish Black", "applications": "Nutraceuticals, Food & Beverages, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/black-pepper.webp" alt="Black Pepper" />
                 <div class="product-overlay">Enquire Now</div>
@@ -315,7 +372,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Dried Ginger">
+            <div class="product-card h-100" data-wa-product="Dried Ginger" data-spec='{"cat": "Spices", "botanical": "Zingiber officinale", "family": "Zingiberaceae", "parts": "Dried Rhizome", "form": "Whole / Sliced / Powder", "color": "Light Brown to Beige", "applications": "Tea, Cooking, Health Products, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/dried-ginger.jpg" alt="Dried Ginger" />
                 <div class="product-overlay">Enquire Now</div>
@@ -329,7 +386,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up" data-aos-delay="60">
-            <div class="product-card h-100" data-wa-product="Coriander Seed">
+            <div class="product-card h-100" data-wa-product="Coriander Seed" data-spec='{"cat": "Spices", "botanical": "Coriandrum sativum", "family": "Apiaceae", "parts": "Dried Seeds", "form": "Whole Seeds / Powder", "color": "Light Brown to Yellowish Brown", "applications": "Nutraceuticals, Food & Beverages, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/coriander-seeds.jpg" alt="Coriander Seed" />
                 <div class="product-overlay">Enquire Now</div>
@@ -343,7 +400,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up" data-aos-delay="120">
-            <div class="product-card h-100" data-wa-product="Cardamom">
+            <div class="product-card h-100" data-wa-product="Cardamom" data-spec='{"cat": "Spices", "botanical": "Elettaria cardamomum", "family": "Zingiberaceae", "parts": "Dried Seed Pods", "form": "Whole Pods / Seeds / Powder", "color": "Green to Light Green Pods", "applications": "Food & Beverages, Herbal Teas, Nutraceuticals, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/cardamom.webp" alt="Cardamom" />
                 <div class="product-overlay">Enquire Now</div>
@@ -357,7 +414,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="spices" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Tamarind">
+            <div class="product-card h-100" data-wa-product="Tamarind" data-spec='{"cat": "Spices", "botanical": "Tamarindus indica", "family": "Fabaceae", "parts": "Fruit Pulp", "form": "Whole / Pulp / Paste / Concentrate", "color": "Dark Brown, Sticky Fibrous", "applications": "Global Cuisine, Food Processing, Nutraceuticals, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/spices/tamarind.jpg" alt="Tamarind" />
                 <div class="product-overlay">Enquire Now</div>
@@ -372,7 +429,7 @@
 
           <!-- Jaggery (4) -->
           <div class="col-md-6 col-lg-4" data-cat="jaggery" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Jaggery – Balls">
+            <div class="product-card h-100" data-wa-product="Jaggery – Balls" data-spec='{"cat": "Jaggery", "botanical": "Saccharum officinarum", "family": "Poaceae", "parts": "Sugarcane Juice", "form": "Solid Round Balls", "color": "Golden Brown to Dark Brown", "applications": "Natural Sweetener, Food & Beverage, Ayurvedic, Export & Bulk Trading"}'>
               <div class="product-media">
                 <img src="assets/jaggery/jaggery-balls.jpeg" alt="Jaggery Balls" />
                 <div class="product-overlay">Enquire Now</div>
@@ -386,7 +443,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="jaggery" data-aos="fade-up" data-aos-delay="60">
-            <div class="product-card h-100" data-wa-product="Jaggery – Powder (Yellow/Brown)">
+            <div class="product-card h-100" data-wa-product="Jaggery – Powder (Yellow/Brown)" data-spec='{"cat": "Jaggery", "botanical": "Saccharum officinarum", "family": "Poaceae", "parts": "Sugarcane Juice", "form": "Powder / Granules", "color": "Yellow to Brown, Free-Flowing", "applications": "Bakeries, Beverages, Health Products, Traditional Indian Foods"}'>
               <div class="product-media">
                 <img src="assets/jaggery/jaggery-powder-yellow.jpg" alt="Jaggery Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -400,7 +457,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="jaggery" data-aos="fade-up" data-aos-delay="120">
-            <div class="product-card h-100" data-wa-product="Panangkarupatti – Palmyra Jaggery">
+            <div class="product-card h-100" data-wa-product="Panangkarupatti – Palmyra Jaggery" data-spec='{"cat": "Jaggery", "botanical": "Borassus flabellifer", "family": "Arecaceae", "parts": "Palmyra Palm Sap", "form": "Solid Blocks / Cakes", "color": "Dark Brown to Blackish Brown", "applications": "Natural Sweetener, Ayurvedic Preparations, Traditional Indian Foods"}'>
               <div class="product-media">
                 <img src="assets/jaggery/panangkarupatti-palmyra-jaggery.webp" alt="Panangkarupatti" />
                 <div class="product-overlay">Enquire Now</div>
@@ -414,7 +471,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4" data-cat="jaggery" data-aos="fade-up">
-            <div class="product-card h-100" data-wa-product="Palm Sugar Candy Powder">
+            <div class="product-card h-100" data-wa-product="Palm Sugar Candy Powder" data-spec='{"cat": "Jaggery", "botanical": "Borassus flabellifer", "family": "Arecaceae", "parts": "Palm Sap", "form": "Powder / Crystalline Granules", "color": "Light Brown to Golden Brown", "applications": "Natural Sweetener, Food & Beverage, Health Products"}'>
               <div class="product-media">
                 <img src="assets/jaggery/palm-sugar-candy-powder.jpeg" alt="Palm Sugar Candy Powder" />
                 <div class="product-overlay">Enquire Now</div>
@@ -446,7 +503,6 @@
                 <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
             </div>
@@ -455,6 +511,7 @@
               <ul class="list-unstyled mb-0">
                 <li class="mb-2"><a href="index.html" data-i18n="nav_home">Home</a></li>
                 <li class="mb-2"><a href="about-us.html" data-i18n="footer_about">About Us</a></li>
+                <li class="mb-2"><a href="services.html" data-i18n="nav_services">Services</a></li>
                 <li class="mb-2"><a href="founder.html" data-i18n="nav_founder">Founder Profile</a></li>
                 <li class="mb-2"><a href="products.html" data-i18n="nav_all_products">All Products</a></li>
                 <li class="mb-2"><a href="faq.html" data-i18n="nav_faq">FAQs</a></li>
@@ -472,9 +529,9 @@
             <div class="col-lg-3">
               <div class="fw-bold text-white mb-3" data-i18n="footer_contact_info">Contact Info</div>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 121/A Naranampalayam, Kamalapuram, Omalur TK, Salem – 636309, India</li>
+                <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 14/2, Street -3 kullagoundanoor, Govt of engeneering college, karuppur, salem- 636011</li>
                 <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:info@terragroxglobal.com">info@terragroxglobal.com</a></li>
-                <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:export@terragrox.com">export@terragrox.com</a></li>
+                <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:terragroxglobal@gmail.com">terragroxglobal@gmail.com</a></li>
                 <li class="mb-2"><i class="fa-brands fa-whatsapp me-2"></i> <a href="https://wa.me/917695929907" target="_blank" rel="noopener noreferrer">+91 7695929907</a></li>
                 <li class="mb-0"><i class="fa-solid fa-clock me-2"></i> <span data-i18n="footer_hours">Mon–Sat: 9:00 AM – 6:00 PM IST</span></li>
               </ul>
@@ -485,7 +542,8 @@
       <div class="bottom">
         <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
           <div>© <span id="year"></span> TerrAgrox global. All rights reserved.</div>
-          <div>India · Salem, Tamil Nadu</div>
+                    <div>Sustainably Sourced for You</div>
+          <div>India · Karuppur, Salem</div>
         </div>
       </div>
     </footer>
