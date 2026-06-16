@@ -241,8 +241,11 @@ h1,h2,h3,h4,h5{
 .brand .accent{ color:var(--accent-light); }
 .navbar-brand.brand-logo{
   display:inline-flex;
-  align-items:center;
+  align-items:flex-start;
+  align-self:flex-start;
   flex-shrink:0;
+  margin-top:-4px;
+  margin-left:calc(50% - 50vw + 16px);
   margin-right:1rem;
   padding:0;
   line-height:1;
@@ -280,6 +283,7 @@ h1,h2,h3,h4,h5{
   }
   .navbar-brand.brand-logo{
     max-width:calc(100% - 56px);
+    margin-left:calc(50% - 50vw + 12px);
     margin-right:.5rem;
   }
   .navbar-brand.brand-logo img{
@@ -294,6 +298,7 @@ h1,h2,h3,h4,h5{
 @media (max-width: 575.98px){
   .navbar-brand.brand-logo{
     max-width:calc(100% - 52px);
+    margin-left:calc(50% - 50vw + 10px);
     margin-right:.35rem;
   }
   .navbar-brand.brand-logo img{
@@ -317,6 +322,11 @@ h1,h2,h3,h4,h5{
   padding:0;
   image-rendering:auto;
   filter:drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+}
+@media (min-width: 992px){
+  .footer .top .row > .col-lg-4:first-child{
+    margin-left:calc(50% - 50vw + 16px);
+  }
 }
 
 .btn-whatsapp{
@@ -504,6 +514,8 @@ h1,h2,h3,h4,h5{
   box-shadow:0 18px 40px rgba(27,94,32,.18);
 }
 .cat-tile:hover .cat-tile-ico img{ transform:scale(1.06); }
+.cat-tile-ico img.cat-zoom{ transform:scale(1.45); }
+.cat-tile:hover .cat-tile-ico img.cat-zoom{ transform:scale(1.52); }
 
 .cat-tile-label{
   font-weight:800;
@@ -849,7 +861,7 @@ h1,h2,h3,h4,h5{
 }
 .why-choose-left{
   flex:1 1 0;
-  background:#1b5e20;
+  background:#a9cf8e;
   padding:3rem 3.5rem 3rem clamp(1.5rem, 5vw, 4rem);
   display:flex;
   flex-direction:column;
@@ -857,7 +869,7 @@ h1,h2,h3,h4,h5{
 }
 .why-choose-right{
   flex:1 1 0;
-  background:#b8860b;
+  background:#ecca6e;
   padding:3rem clamp(1.5rem, 5vw, 4rem) 3rem 3.5rem;
   display:flex;
   flex-direction:column;
@@ -901,31 +913,31 @@ h1,h2,h3,h4,h5{
   gap:1rem;
   padding:.85rem 0;
 }
-.why-choose-left .why-feature:not(:last-child){ border-bottom:1px solid rgba(255,255,255,.18); }
+.why-choose-left .why-feature:not(:last-child){ border-bottom:1px solid rgba(0,0,0,.14); }
 .why-choose-right .why-feature:not(:last-child){ border-bottom:1px solid rgba(0,0,0,.14); }
 .why-feature-icon{
   width:44px;
   height:44px;
   border-radius:50%;
-  background:rgba(255,255,255,.22);
+  background:rgba(255,255,255,.55);
   display:flex;
   align-items:center;
   justify-content:center;
   flex:0 0 44px;
-  box-shadow:0 2px 8px rgba(0,0,0,.15);
+  box-shadow:0 2px 8px rgba(0,0,0,.10);
 }
-.why-choose-left .why-feature-icon i{ color:#d4a017; }
+.why-choose-left .why-feature-icon i{ color:#1b5e20; }
 .why-choose-right .why-feature-icon i{ color:#0a2e0f; }
 .why-feature-text h6{
   font-family:var(--font-serif), Georgia, serif;
   font-weight:700;
-  color:#ffffff;
+  color:#15330f;
   margin-bottom:.12rem;
   font-size:.95rem;
 }
 .why-choose-right .why-feature-text h6{ color:#0a2e0f; }
 .why-feature-text p{
-  color:rgba(255,255,255,.78);
+  color:rgba(21,51,15,.78);
   font-size:.83rem;
   margin:0;
   line-height:1.5;
@@ -939,7 +951,7 @@ h1,h2,h3,h4,h5{
     flex:0 0 auto;
     width:100%;
     padding:2rem 0;
-    background:linear-gradient(to bottom, #1b5e20 50%, #b8860b 50%);
+    background:linear-gradient(to bottom, #a9cf8e 50%, #ecca6e 50%);
   }
   .why-choose-left,.why-choose-right{
     width:100%;
@@ -2032,6 +2044,39 @@ h1,h2,h3,h4,h5{
   border-radius:4px;
   margin-bottom:1rem;
 }
+.qualification-block{ margin-bottom:1.5rem; }
+.qualification-title{
+  font-weight:700;
+  color:var(--text-dark);
+  font-size:1.1rem;
+  margin-bottom:1rem;
+}
+.qualification-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.qualification-list li{
+  display:flex;
+  align-items:center;
+  gap:.85rem;
+  padding:.6rem 0;
+  font-weight:600;
+  font-size:1rem;
+  color:var(--text-muted);
+}
+.qual-check{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 28px;
+  font-size:.72rem;
+}
 .founder-stat-inline{
   display:flex;
   flex-wrap:wrap;
@@ -2284,6 +2329,7 @@ svg{
   .footer-logo{
     margin-left:auto;
     margin-right:auto;
+    object-position:center center;
   }
   .footer .social{
     justify-content:center;
