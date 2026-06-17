@@ -253,7 +253,7 @@ h1,h2,h3,h4,h5{
 .navbar-brand.brand-logo::first-letter{ font-size:inherit; }
 /* Navbar only — uses logo-nav.png (icon + name, no tagline) */
 .navbar-brand.brand-logo img{
-  height:clamp(110px, 15vmin, 180px);
+  height:clamp(140px, 18vmin, 220px);
   width:auto;
   max-width:min(420px, 52vw);
   object-fit:contain;
@@ -268,7 +268,7 @@ h1,h2,h3,h4,h5{
   filter:drop-shadow(0 2px 10px rgba(0, 0, 0, 0.55));
 }
 .tg-navbar.scrolled .navbar-brand.brand-logo img{
-  height:clamp(90px, 12vmin, 148px);
+  height:clamp(110px, 14vmin, 170px);
   filter:drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
 .brand-logo{
@@ -287,11 +287,11 @@ h1,h2,h3,h4,h5{
     margin-right:.5rem;
   }
   .navbar-brand.brand-logo img{
-    height:90px;
+    height:115px;
     max-width:min(280px, 56vw);
   }
   .tg-navbar.scrolled .navbar-brand.brand-logo img{
-    height:80px;
+    height:100px;
   }
 }
 
@@ -302,11 +302,11 @@ h1,h2,h3,h4,h5{
     margin-right:.35rem;
   }
   .navbar-brand.brand-logo img{
-    height:74px;
+    height:90px;
     max-width:min(220px, 60vw);
   }
   .tg-navbar.scrolled .navbar-brand.brand-logo img{
-    height:66px;
+    height:80px;
   }
 }
 .footer-logo{
