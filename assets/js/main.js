@@ -115,7 +115,7 @@
   });
 
 
-  // ---------- Contact form -> Gmail compose ----------
+  // ---------- Contact form ----------
   const waForm = $("#waContactForm");
   if (waForm) {
     waForm.addEventListener("submit", (e) => {
@@ -123,31 +123,26 @@
       waForm.classList.add("was-validated");
       if (!waForm.checkValidity()) return;
 
-      const name    = $("#fullName", waForm)?.value?.trim() || $("#name", waForm)?.value?.trim() || "";
-      const company = $("#companyName", waForm)?.value?.trim() || "";
-      const email   = $("#email", waForm)?.value?.trim() || "";
-      const phone   = $("#phone", waForm)?.value?.trim() || "";
-      const product = $("#productInterest", waForm)?.value?.trim() || "";
-      const message = $("#message", waForm)?.value?.trim() || "";
+      const name    = $("#fullName").value.trim();
+      const email   = $("#email").value.trim();
+      const phone   = $("#phone").value.trim();
+      const message = $("#message").value.trim();
 
-      const subject = `Enquiry from ${name}${company ? " – " + company : ""}`;
-      const body = [
-        `Name: ${name}`,
-        company ? `Company: ${company}` : null,
-        `Email: ${email}`,
-        `Phone: ${phone}`,
-        product ? `Product Interest: ${product}` : null,
-        "",
-        "Message:",
-        message,
-      ].filter(Boolean).join("\n");
+      const subject = "Website enquiry from " + name;
+      const body =
+        "Hello TerrAgrox Global,\n\n" +
+        "I would like to send an enquiry via your website.\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n\n" +
+        "Message:\n" + message;
 
       const gmailUrl = "https://mail.google.com/mail/?view=cm"
         + "&to=info%40terragroxglobal.com"
         + "&su=" + encodeURIComponent(subject)
         + "&body=" + encodeURIComponent(body);
 
-      window.open(gmailUrl, "_blank");
+      window.location.href = gmailUrl;
     });
   }
 
@@ -370,7 +365,6 @@
         p.classList.add("product-card-desc");
         p.classList.remove("mb-3");
       }
-      const name = h5.textContent.trim().replace(/\s+/g, " ");
       const a = document.createElement("a");
       a.className = "btn-product-wa";
       a.href = "contact-us.html#waContactForm";
