@@ -114,12 +114,8 @@
     });
   });
 
-  // ---------- WhatsApp URL helper ----------
-  function buildWaUrl(message) {
-    return `${WA_BASE}?text=${encodeURIComponent(message)}`;
-  }
 
-  // ---------- Contact form -> WhatsApp ----------
+  // ---------- Contact form -> Gmail compose ----------
   const waForm = $("#waContactForm");
   if (waForm) {
     waForm.addEventListener("submit", (e) => {
@@ -127,35 +123,31 @@
       waForm.classList.add("was-validated");
       if (!waForm.checkValidity()) return;
 
-      const name = $("#fullName", waForm)?.value?.trim() || $("#name", waForm)?.value?.trim() || "";
+      const name    = $("#fullName", waForm)?.value?.trim() || $("#name", waForm)?.value?.trim() || "";
       const company = $("#companyName", waForm)?.value?.trim() || "";
-      const email = $("#email", waForm)?.value?.trim() || "";
-      const phone = $("#phone", waForm)?.value?.trim() || "";
+      const email   = $("#email", waForm)?.value?.trim() || "";
+      const phone   = $("#phone", waForm)?.value?.trim() || "";
       const product = $("#productInterest", waForm)?.value?.trim() || "";
       const message = $("#message", waForm)?.value?.trim() || "";
 
-      const lines = [
-        "Hello TerrAgrox global,",
+      const subject = `Enquiry from ${name}${company ? " – " + company : ""}`;
+      const body = [
+        `Name: ${name}`,
+        company ? `Company: ${company}` : null,
+        `Email: ${email}`,
+        `Phone: ${phone}`,
+        product ? `Product Interest: ${product}` : null,
         "",
-        `*Name:* ${name}`,
-        company ? `*Company:* ${company}` : null,
-        `*Email:* ${email}`,
-        `*Phone:* ${phone}`,
-        product ? `*Product Interest:* ${product}` : null,
-        "",
-        "*Message:*",
+        "Message:",
         message,
-      ].filter(Boolean);
+      ].filter(Boolean).join("\n");
 
-      window.open(buildWaUrl(lines.join("\n")), "_blank", "noopener,noreferrer");
+      const gmailUrl = "https://mail.google.com/mail/?view=cm"
+        + "&to=info%40terragroxglobal.com"
+        + "&su=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
 
-      const status = $("#waStatus");
-      if (status) {
-        status.classList.remove("d-none");
-        status.classList.add("success-msg");
-        const dict = window.TG_I18N || {};
-        status.textContent = dict.form_wa_status || "Opening WhatsApp... Your enquiry will be sent directly to our team.";
-      }
+      window.open(gmailUrl, "_blank");
     });
   }
 
