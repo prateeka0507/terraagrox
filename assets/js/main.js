@@ -137,12 +137,12 @@
         "Phone: " + phone + "\n\n" +
         "Message:\n" + message;
 
-      const gmailUrl = "https://mail.google.com/mail/u/0/?fs=1"
+      const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&tf=1"
         + "&to=info%40terragroxglobal.com"
         + "&su=" + encodeURIComponent(subject)
         + "&body=" + encodeURIComponent(body);
 
-      window.open(gmailUrl, "_blank");
+      window.location.href = gmailUrl;
     });
   }
 
